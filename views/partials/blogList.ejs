@@ -1,0 +1,9 @@
+<% if(locals.blogs){ %>
+<ul>
+  <% blogs.forEach(blog => { %>
+  <li>
+    <a href="/blog/<%= blog.id %>"><%= blog['title']%></a>
+  </li>
+  <% }); %>
+</ul>
+<% } %> <% console.log(blogs[0]) %>
