@@ -3,7 +3,9 @@
   <% blogs.forEach(blog => { %>
   <li>
     <a href="/blog/<%= blog.id %>"><%= blog['title']%></a>
+    <button onclick="location.href='/delete/ <%= blog.id %>'">Delete</button>
+    <button onclick="location.href='/update/ <%= blog.id %>'">Update</button>
   </li>
   <% }); %>
 </ul>
-<% } %> <% console.log(blogs[0]) %>
+<% } %> <% console.log(blogs) %>
